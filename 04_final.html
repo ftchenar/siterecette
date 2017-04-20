@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=iso-8859-1" />
+  <title>HTML5 par la Pratique - Chapitre 4 - Mise en page</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="base.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+
+#wrap {background-color:#E0B3B9;
+width:960px;
+border:thin solid black;
+margin:0 auto;
+}
+
+#masthead {
+background-color:red;
+}
+
+#mainnav {
+background-color:#C2C895;
+height:40px;
+}
+
+#mainnav li {
+float:left;
+width:140px;
+/* height:25px; */
+background-color:#CCC;
+text-align:center;
+border-left:1px black solid;
+border-right:1px black solid;
+line-height:25px;
+}
+
+
+#sidebar { 
+float:left;
+width:300px;
+background-color:#CCC;
+}
+
+#main {
+width:600px;
+float:right;
+background-color:#ADA446;
+}
+
+#footer {
+clear:both;
+background-color:#BA2B22;
+background-image:url(images/footer_background.jpg);
+background-repeat:no-repeat;
+width:960px;
+height:118px;
+padding-top:10px;
+
+}
+
+#footer p {
+margin:10px 0 0 20px;
+width:280px;
+font-family:Verdana, Geneva, sans-serif;
+font-size:0.689em;
+}
+
+
+p, h1, h2, h3, h4 { 
+margin-bottom:20px;
+}
+
+#sidebar p, #sidebar h2, #sidebar h3, #sidebar h4, #main p, #main h1, #main h2,
+#main h3 {
+margin-left:20px;
+margin-right:20px;
+}
+
+#sidebar p {
+margin-left:30px;
+}
+
+#sidebar h2 {
+margin-top:15px;
+}
+
+
+  </style>
+</head>
+<body>
+</br>
+<!-- This is the beginning of the wrapping div. This div will nest all of the other page elements and have a fixed-width.-->
+<div id="wrap"><!-- This is the beginning of the masthead div. Sometimes known as the "header", this div will contain the site logo and eventually other sections such as the s19:54 22/12/2011econdary navigation .-->
+<div id="masthead"> 
+<img src="images/smoothieworld_logo.png" width="200" height="150" alt="smoothieworld_logo" />
+</div>
+<!-- End of Masthead Div--><!-- This is the beginning of the main navigation div. We call this "mainnav" because it will serve as users primary method of navigation.-->
+
+<div id="mainnav">
+<ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">A propos de nous</a></li>
+    <li><a href="recipes.html">Recettes</a></li>
+    <li><a href="submitrecipe.html">Proposer une recette</a></li>
+    <li><a href="forum.html">Forum</a></li>
+    <li><a href="contact.html">Nous Contacter</a></li>
+</ul>
+</div>
+
+
+<!-- End of mainnav Div--><!-- This is the beginning of the innerwrap section, called so because it nests the sidebar and maincontent but is itself nested within the wrap div..-->
+<div id="innerwrap"><!-- This is the beginning of the sidebar. Although this sidebar will be positioned to the left, you want to avoid giving sidebars names such as 'left' or 'right', this avoids confusion if you decide to move the sidebar at any point.-->
+<div id="sidebar">
+<h2>Le TOP 10 des Smoothies</h2>
+<h3>Orange Funky</h3>
+<p>Soumis par l'utilisateur iosborn22, ce smoothie a reçu plus de 200
+appréciations 5 étoiles et son mélange de <strong>jus d'orange</strong>
+et de <strong>banane pressée</strong>
+en fait un excellent choix pour le petit déjeuner! </p>
+<h3>Tropical KickBack</h3>
+<p>Soumis par l'utilisateur smoothj282, ce smoothie combine des
+ingrédients exotiques comme des fruits de la passion et des mangues. Le
+résultat est une boisson tonifiante et délicieuse pour toutes les
+heures du jour ! </p>
+<h4>Soumettre une recette</h4>
+</div>
+<!-- End of Sidebar Div--><!-- This is the beginning of the main column which is named so because it holds the primary content of the site..-->
+<div id="main">
+<h1>SmoothieWorld est votre destination #1 pour les recettes de
+smoothie.</h1>
+<h2>Notre mission </h2>
+<p>Nous, ici, chez SmoothieWorld, nous nous consacrons à faire des
+smoothies un élément quotidien de votre vie. Que ce soit soit pour le
+déjeuner, le déjeuner ou même le dîner, les smoothies sont excellents
+pour obtenir la nutrition dont vous avez besoin tout en vous amusant à
+les préparer.</p>
+<p>Les recettes de notre site ont toutes été examinées dans notre
+laboratoire par des experts en matière de smoothie. D'autres sites de
+smoothie pourraient proposer plus de recettes ou des fruits plus
+exotiques que ce que vous trouverez ici, mais nous estimons que la
+qualité prime sur la quantité et&nbsp; qu'il n'est pas indispensable de
+trouver tous les jours de nouvelles recettes. Nous croyons également
+que les meilleures recettes viennent de vous, le lecteur, et c'est
+pourquoi nous vous encourageons à rejoindre la communauté des amateurs
+de smoothie. Lisez la suite...<br />
+</p>
+
+
+</div>
+<!-- End of Main Div--> </div>
+<!-- End of Innerwrap Div--><!-- This is the beginning of the  footer will live at the bottom of the page, although it is still nested within the -->
+<div id="footer">
+<p>Copyright SmoothieWorld 2011 </p>
+<p>En vous enregistrant ou en utilisant ce site, vous acceptez notre <a href="useragreement.html"> contrat utilisateur </a> et notre charte de <a href="privacy.html">Respect de la vie privée.</a></p>
+</div>
+
+<!-- End of Footer Div--> </div>
+<!-- End of the Wrap Div-->
+</body>
+</html>
